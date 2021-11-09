@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransportActivity">
+
+    <LinearLayout
+        android:id="@+id/loTop"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@color/color0099cc"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/color0099cc"
+        android:text="Welcome:Admin"
+        android:textColor="#CA2C3F"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/loBot"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:background="@color/color0099cc"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="661dp">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        app:layout_constraintBaseline_toBaselineOf="@id/btnShow"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:onClick="return"/>
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="false"
+        android:onClick="show"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="223dp"
+        android:layout_height="167dp"
+        app:srcCompat="@mipmap/bus"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="129dp" />
+
+    <CheckBox
+        android:id="@+id/cbBus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="351dp" />
+
+    <CheckBox
+        android:id="@+id/cbCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        tools:layout_editor_absoluteX="227dp"
+        tools:layout_editor_absoluteY="347dp" />
+
+    <CheckBox
+        android:id="@+id/cbMetro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="402dp" />
+
+    <CheckBox
+        android:id="@+id/cbBike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        tools:layout_editor_absoluteX="227dp"
+        tools:layout_editor_absoluteY="405dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
